@@ -126,3 +126,78 @@ src/
 ├── utils/            # EMI and formatting utilities
 ├── App.tsx
 └── main.tsx
+
+Getting Started
+Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/awala-aishwarya/borrower-copilot.git
+
+Navigate to the project folder:
+
+cd borrower-copilot
+
+Install dependencies:
+
+npm install
+Run the Application
+
+Start the development server:
+
+npm run dev
+
+Open the local URL shown in the terminal.
+
+Usually, this will be:
+
+http://localhost:5173
+
+If port 5173 is already in use, Vite will automatically use another available port.
+
+Production Build
+
+To verify that the application builds successfully:
+
+npm run build
+Assessment Rules and Assumptions
+
+All borrowing rules, thresholds, interest rate bands, FOIR assumptions, processing fees, and decision logic are documented in:
+
+RULES.md
+Borrower Run-Throughs
+
+The assessment results for the three borrowers provided in the challenge are documented in:
+
+RUN_THROUGHS.md
+
+The run-throughs include:
+
+Questions asked
+Borrowing verdict
+Loan amount assessment
+Fair interest rate and APR
+EMI recommendation
+Negotiation Card
+Walkthrough
+
+The product walkthrough and future product considerations are documented in:
+
+WALKTHROUGH.md
+
+It includes:
+
+How the application works
+Assessment flow
+Key design decisions
+What would be built next
+What could be simplified or removed
+Disclaimer
+
+Borrower Copilot is a self-assessment tool and does not provide a loan approval decision, financial guarantee, or official lender quote.
+
+The assessment is based on borrower-provided information and documented assumptions. Actual loan eligibility, interest rates, APR, and repayment terms may vary depending on the lender and their underwriting policies.
