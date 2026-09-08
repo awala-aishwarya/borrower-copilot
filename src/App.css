@@ -1,0 +1,1917 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  color: #1e293b;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f1f5f9 0%,
+      #e8eef7 50%,
+      #f8fafc 100%
+    );
+}
+
+
+/* ========================================
+   APP
+======================================== */
+
+.app {
+  min-height: 100vh;
+  padding: 48px 20px 80px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.app-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 750;
+
+  letter-spacing: -0.8px;
+
+  color: #172033;
+}
+
+.app-header p {
+  margin: 10px 0 0;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.borrower-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+/* ========================================
+   FORM HEADER
+======================================== */
+
+.form-header {
+  background: #ffffff;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 20px;
+
+  padding: 30px 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(15, 23, 42, 0.07);
+}
+
+.form-eyebrow {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  color: #2563eb;
+}
+
+.form-header h2 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+
+  color: #172033;
+}
+
+.form-header p {
+  max-width: 650px;
+
+  margin: 10px 0 0;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+
+/* ========================================
+   STEP BADGE
+======================================== */
+
+.form-header-badge {
+  min-width: 155px;
+
+  padding: 15px 18px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #eef2ff
+    );
+
+  border: 1px solid #cfe0ff;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.form-header-badge span {
+  font-size: 11px;
+  font-weight: 700;
+
+  color: #2563eb;
+}
+
+.form-header-badge strong {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #1e3a5f;
+}
+
+
+/* ========================================
+   SECTION CARD
+======================================== */
+
+.form-section {
+  background: #ffffff;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 18px;
+
+  padding: 28px 30px;
+
+  box-shadow:
+    0 8px 28px
+    rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-section:hover {
+  box-shadow:
+    0 12px 34px
+    rgba(15, 23, 42, 0.07);
+}
+
+
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  padding-bottom: 19px;
+
+  border-bottom:
+    1px solid #e8edf4;
+}
+
+.section-number {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #eef2ff
+    );
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  margin: 1px 0 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+.section-heading p {
+  margin: 7px 0 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #64748b;
+}
+
+
+/* ========================================
+   FORM GRID
+======================================== */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px 26px;
+}
+
+
+/* ========================================
+   FORM GROUP
+======================================== */
+
+.form-group {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.form-group label {
+  font-size: 13px;
+
+  font-weight: 650;
+
+  color: #475569;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  height: 50px;
+
+  padding:
+    0 15px;
+
+  border-radius: 11px;
+
+  border:
+    1px solid #cfd8e5;
+
+  background: #ffffff;
+
+  color: #1e293b;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37, 99, 235, 0.12);
+}
+
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
+
+.form-group input::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+
+/* ========================================
+   DISABLED INPUT
+======================================== */
+
+.form-group input:disabled {
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  cursor: not-allowed;
+
+  border-color: #e2e8f0;
+}
+
+
+/* ========================================
+   SELECT
+======================================== */
+
+.form-group select {
+  cursor: pointer;
+
+  background-color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  color: #1e293b;
+}
+
+.form-group select option {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #1e293b;
+
+  background-color: #ffffff;
+
+  padding: 12px;
+}
+/* ========================================
+   DROPDOWN OPTIONS
+======================================== */
+
+.form-group select option {
+  font-size: 20px !important;
+
+  font-weight: 500;
+
+  color: #1e293b !important;
+
+  background-color: #ffffff;
+
+  min-height: 40px;
+}
+
+/* ========================================
+   INPUT PREFIX
+======================================== */
+
+.input-with-prefix {
+  position: relative;
+
+  width: 100%;
+}
+
+.input-with-prefix span {
+  position: absolute;
+
+  left: 16px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 1;
+
+  color: #475569;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  pointer-events: none;
+}
+
+.input-with-prefix input {
+  padding-left: 40px;
+}
+
+
+/* ========================================
+   INPUT SUFFIX
+======================================== */
+
+.input-with-suffix {
+  position: relative;
+
+  width: 100%;
+}
+
+.input-with-suffix input {
+  padding-right: 82px;
+}
+
+.input-with-suffix span {
+  position: absolute;
+
+  right: 16px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #64748b;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   SUBMIT AREA
+======================================== */
+
+.form-submit-area {
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #f8fbff
+    );
+
+  border:
+    1px solid #dbe3ee;
+
+  border-radius: 18px;
+
+  padding: 26px 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(15, 23, 42, 0.06);
+}
+
+
+/* ========================================
+   SUBMIT INFORMATION
+======================================== */
+
+.submit-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.submit-info strong {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+.submit-info span {
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #64748b;
+
+  max-width: 650px;
+}
+
+
+/* ========================================
+   ASSESS BUTTON
+======================================== */
+
+.assess-button {
+  min-width: 210px;
+
+  height: 52px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 0 26px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 22px
+    rgba(37, 99, 235, 0.28);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.assess-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 28px
+    rgba(37, 99, 235, 0.35);
+}
+
+.assess-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   FORM VALIDATION
+========================================= */
+
+.field-error {
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  color: #dc2626;
+}
+
+.input-error {
+  border-color: #dc2626 !important;
+
+  background: #fffafa !important;
+}
+
+.input-error:focus {
+  border-color: #dc2626 !important;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(220, 38, 38, 0.1) !important;
+}
+
+
+/* =========================================
+   ASSESSMENT RESULT
+========================================= */
+
+.assessment-result {
+  width: 100%;
+
+  margin: 32px auto 80px;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 40px
+    rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================
+   RESULT HEADER
+========================================= */
+
+.result-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding-bottom: 28px;
+
+  margin-bottom: 28px;
+
+  border-bottom:
+    1px solid #e2e8f0;
+}
+
+.result-header h1 {
+  margin: 8px 0;
+
+  font-size: 30px;
+
+  color: #1e293b;
+}
+
+.result-header p {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.result-status {
+  min-width: 120px;
+
+  padding: 14px 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.result-status span {
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.result-status strong {
+  font-size: 15px;
+
+  color: #2563eb;
+}
+
+
+/* =========================================
+   VERDICT CARD
+========================================= */
+
+.verdict-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 28px;
+
+  margin-bottom: 28px;
+
+  border-radius: 16px;
+
+  border: 1px solid #dbeafe;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #f8fafc
+    );
+}
+
+.verdict-content {
+  flex: 1;
+}
+
+.verdict-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.verdict-card h2 {
+  margin: 0 0 10px;
+
+  font-size: 30px;
+
+  color: #1e293b;
+}
+
+.verdict-card p {
+  margin: 0;
+
+  max-width: 750px;
+
+  color: #475569;
+
+  line-height: 1.7;
+}
+
+.verdict-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  background: #2563eb;
+
+  color: white;
+
+  flex-shrink: 0;
+}
+
+
+/* BORROW */
+
+.verdict-borrow {
+  background:
+    linear-gradient(
+      135deg,
+      #ecfdf5,
+      #f8fafc
+    );
+
+  border-color: #bbf7d0;
+}
+
+.verdict-borrow .verdict-icon {
+  background: #16a34a;
+}
+
+
+/* BORROW LESS */
+
+.verdict-borrow_less {
+  background:
+    linear-gradient(
+      135deg,
+      #fffbeb,
+      #f8fafc
+    );
+
+  border-color: #fde68a;
+}
+
+.verdict-borrow_less .verdict-icon {
+  background: #d97706;
+}
+
+
+/* DON'T BORROW */
+
+.verdict-dont_borrow {
+  background:
+    linear-gradient(
+      135deg,
+      #fef2f2,
+      #f8fafc
+    );
+
+  border-color: #fecaca;
+}
+
+.verdict-dont_borrow .verdict-icon {
+  background: #dc2626;
+}
+
+
+/* =========================================
+   WARNINGS
+========================================= */
+
+.warnings-card {
+  margin-bottom: 30px;
+
+  padding: 24px;
+
+  border-radius: 14px;
+
+  border: 1px solid #fde68a;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffbeb,
+      #ffffff
+    );
+}
+
+.warnings-card h3 {
+  margin: 0 0 14px;
+
+  color: #92400e;
+
+  font-size: 16px;
+}
+
+.warnings-card ul {
+  margin: 0;
+
+  padding-left: 20px;
+}
+
+.warnings-card li {
+  margin-bottom: 8px;
+
+  color: #78350f;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RESULT SECTIONS
+========================================= */
+
+.result-section {
+  margin-top: 36px;
+}
+
+.result-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+.result-section-heading > span {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.result-section-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 19px;
+
+  color: #1e293b;
+}
+
+.result-section-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RECOMMENDATION GRID
+========================================= */
+
+.recommendation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.result-card {
+  padding: 22px;
+
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 14px
+    rgba(15, 23, 42, 0.04);
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 145px;
+}
+
+.result-card > span {
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin-bottom: 14px;
+}
+
+.result-card strong {
+  color: #1e293b;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+
+  line-height: 1.3;
+}
+
+.result-card small {
+  margin-top: auto;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.featured-card {
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #ffffff
+    );
+
+  border-color: #bfdbfe;
+}
+
+.featured-card strong {
+  color: #2563eb;
+}
+
+
+/* =========================================
+   ANALYSIS GRID
+========================================= */
+
+.analysis-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.analysis-card {
+  padding: 24px;
+
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+
+  background: #f8fafc;
+}
+
+.analysis-card span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.analysis-card strong {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #1e293b;
+
+  font-size: 21px;
+
+  line-height: 1.4;
+}
+
+.analysis-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   STRESS TEST
+========================================= */
+
+.stress-card {
+  padding: 26px;
+
+  border-radius: 14px;
+
+  border: 1px solid #ddd6fe;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f3ff,
+      #fafafa
+    );
+}
+
+.stress-card > div {
+  margin-bottom: 16px;
+}
+
+.stress-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.stress-card strong {
+  color: #6d28d9;
+
+  font-size: 28px;
+}
+
+.stress-card p {
+  margin: 0;
+
+  color: #475569;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CONFIDENCE
+========================================= */
+
+.confidence-card {
+  padding: 26px;
+
+  display: grid;
+
+  grid-template-columns:
+    220px 1fr;
+
+  gap: 30px;
+
+  align-items: center;
+
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+
+  background: #f8fafc;
+}
+
+.confidence-level {
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+}
+
+.confidence-level span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+.confidence-level strong {
+  font-size: 24px;
+
+  text-transform: capitalize;
+
+  color: #2563eb;
+}
+
+.confidence-card p {
+  margin: 0;
+
+  color: #475569;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NEGOTIATION CARD
+========================================= */
+
+.negotiation-card {
+  padding: 28px;
+
+  border-radius: 16px;
+
+  border: 1px solid #bfdbfe;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #ffffff
+    );
+
+  box-shadow:
+    0 8px 24px
+    rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   NEGOTIATION HEADER
+========================================= */
+
+.negotiation-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  border-bottom:
+    1px solid #bfdbfe;
+}
+
+.negotiation-header > div:first-child > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  color: #64748b;
+}
+
+.negotiation-header h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #1e293b;
+}
+
+
+/* =========================================
+   NEGOTIATION CONFIDENCE
+========================================= */
+
+.negotiation-confidence {
+  min-width: 105px;
+
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #bfdbfe;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.negotiation-confidence span {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.06em;
+
+  color: #64748b;
+}
+
+.negotiation-confidence strong {
+  font-size: 14px;
+
+  text-transform: capitalize;
+
+  color: #2563eb;
+}
+
+
+/* =========================================
+   BORROWER SUMMARY
+========================================= */
+
+.borrower-summary {
+  margin: 0 0 24px;
+
+  padding: 16px 18px;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbeafe;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NEGOTIATION GRID
+========================================= */
+
+.negotiation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.negotiation-grid > div {
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbeafe;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  min-height: 105px;
+}
+
+.negotiation-grid span {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+
+  color: #64748b;
+}
+
+.negotiation-grid strong {
+  font-size: 19px;
+
+  color: #1e293b;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   NEGOTIATION REASONS
+========================================= */
+
+.negotiation-reasons {
+  padding-top: 22px;
+
+  border-top:
+    1px solid #bfdbfe;
+}
+
+.negotiation-reasons h4 {
+  margin: 0 0 14px;
+
+  font-size: 16px;
+
+  color: #1e293b;
+}
+
+.negotiation-reasons ul {
+  margin: 0;
+
+  padding-left: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.negotiation-reasons li {
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   NEGOTIATION RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .negotiation-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .negotiation-card {
+    padding: 20px;
+  }
+
+  .negotiation-header {
+    flex-direction: column;
+  }
+
+  .negotiation-confidence {
+    width: 100%;
+  }
+
+  .negotiation-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================================
+   BORROWER SUMMARY
+========================================= */
+
+.borrower-summary {
+  margin: 0 0 24px;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.7);
+
+  border: 1px solid #dbeafe;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NEGOTIATION GRID
+========================================= */
+
+.negotiation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-bottom: 26px;
+}
+
+.negotiation-grid > div {
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbeafe;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  min-height: 115px;
+}
+
+.negotiation-grid span {
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #64748b;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+}
+
+.negotiation-grid strong {
+  font-size: 19px;
+
+  color: #1e293b;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   NEGOTIATION REASONS
+========================================= */
+
+.negotiation-reasons {
+  padding-top: 22px;
+
+  border-top:
+    1px solid #dbeafe;
+}
+
+.negotiation-reasons h4 {
+  margin: 0 0 14px;
+
+  font-size: 16px;
+
+  color: #1e293b;
+}
+
+.negotiation-reasons ul {
+  margin: 0;
+
+  padding-left: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.negotiation-reasons li {
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BORROWING SUMMARY
+========================================= */
+
+.assessment-summary {
+  margin-top: 40px;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1e293b,
+      #334155
+    );
+
+  color: white;
+}
+
+.assessment-summary h2 {
+  margin: 0 0 12px;
+
+  font-size: 24px;
+}
+
+.assessment-summary > p {
+  margin: 0 0 28px;
+
+  color: #cbd5e1;
+
+  line-height: 1.7;
+}
+
+.summary-items {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.summary-items > div {
+  padding: 18px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+}
+
+.summary-items span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 11px;
+
+  color: #cbd5e1;
+}
+
+.summary-items strong {
+  font-size: 19px;
+
+  color: white;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .recommendation-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .negotiation-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .negotiation-grid > div:last-child {
+    grid-column: span 2;
+  }
+
+  .app-container {
+    padding:
+      32px 18px 60px;
+  }
+
+  .form-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .form-header-badge {
+    width: 100%;
+  }
+
+  .form-submit-area {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .assess-button {
+    width: 100%;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .assessment-result {
+    margin: 20px auto 50px;
+
+    padding: 20px;
+  }
+
+  .result-header {
+    flex-direction: column;
+  }
+
+  .result-status {
+    width: 100%;
+  }
+
+  .verdict-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confidence-card {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-items {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* NEGOTIATION MOBILE */
+
+  .negotiation-card {
+    padding: 20px;
+  }
+
+  .negotiation-header {
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .negotiation-confidence {
+    width: 100%;
+  }
+
+  .negotiation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .negotiation-grid > div:last-child {
+    grid-column: auto;
+  }
+
+  .negotiation-grid > div {
+    min-height: auto;
+  }
+
+  .result-header h1 {
+    font-size: 24px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .app-container {
+    padding:
+      24px 12px 50px;
+  }
+
+  .app-header h1 {
+    font-size: 27px;
+  }
+
+  .app-header p {
+    font-size: 14px;
+  }
+
+  .form-header {
+    padding: 24px 20px;
+
+    border-radius: 16px;
+  }
+
+  .form-header h2 {
+    font-size: 23px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+  }
+
+  .form-section {
+    padding: 22px 18px;
+
+    border-radius: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .section-heading {
+    gap: 12px;
+  }
+
+  .section-heading h2 {
+    font-size: 17px;
+  }
+
+  .section-heading p {
+    font-size: 13px;
+  }
+
+  .form-submit-area {
+    padding: 22px 20px;
+  }
+
+}
+/* =========================================
+   NO BORROWING RECOMMENDATION
+========================================= */
+
+.no-borrowing-card {
+  padding: 26px;
+
+  border-radius: 14px;
+
+  border: 1px solid #fecaca;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fef2f2,
+      #ffffff
+    );
+}
+
+.no-borrowing-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 18px;
+
+  color: #b91c1c;
+}
+
+.no-borrowing-card p {
+  margin: 0 0 10px;
+
+  color: #7f1d1d;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.no-borrowing-card p:last-child {
+  margin-bottom: 0;
+}
